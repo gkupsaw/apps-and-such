@@ -1,0 +1,71 @@
+/* SASS Variables */
+
+$sidebarContentWidth: 200px;
+$primary_lightblue: #7395ae;
+$primary_grayblue: #557a95;
+$primary_sand: #b1a296;
+$primary_gray: #5d5c61;
+$background_darkgray_transparent: rgba(50, 50, 50, 0.5);
+$background_lightgray_transparent: rgba(100, 100, 100, 0.5);
+
+/* SASS Extend Classes */
+
+.flex-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* CSS */
+
+img {
+  transition: 0.5s;
+  border-radius: 10px;
+  max-height: 250px;
+  max-width: $sidebarContentWidth;
+}
+
+.box-bio {
+  max-width: 200px;
+  height: fit-content;
+}
+
+.box-icons {
+  display: flex;
+  justify-content: space-around;
+  max-width: $sidebarContentWidth;
+}
+
+#alt-icons {
+  display: none;
+}
+
+.box-links {
+  display: flex;
+  flex-flow: column;
+}
+
+#sidebar {
+  @extend .flex-centered;
+  flex: 1;
+  height: 100%;
+  max-width: 25%;
+  background-color: $primary_gray;
+  overflow: auto;
+  flex-flow: column;
+  & > * {
+    margin-bottom: 20px;
+  }
+}
+
+.sidebar-item {
+  @extend .flex-centered;
+  text-align: center;
+  padding: 15px;
+  transition: 0.5s;
+  &:hover {
+    background-color: gray;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}

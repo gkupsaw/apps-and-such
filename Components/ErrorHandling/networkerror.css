@@ -1,0 +1,14 @@
+.container-error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20;
+}
+
+.error {
+  width: 'fit-content';
+  height: 'fit-content';
+  color: red;
+  text-align: 'center';
+}

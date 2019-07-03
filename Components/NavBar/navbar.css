@@ -1,0 +1,40 @@
+/* Navigation Styling */
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex: 1;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 15px;
+  background-color: rgba(128, 128, 128, 0.6)
+}
+
+.nav-section {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  height: fit-content;
+  justify-content: center;
+}
+
+.nav-item {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 5px;
+  padding: 15px;
+  background-color: rgb(51, 122, 183);
+  transition: 0.5s;
+  color: wheat;
+  margin-right: 30px;
+}
+
+.nav-item:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}

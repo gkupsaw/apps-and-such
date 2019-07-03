@@ -1,0 +1,63 @@
+/* Slideshow Styling */
+
+img {
+  transition: 5s;
+  border-radius: 10px;
+  height: 400px;
+  width: 300px;
+}
+
+.slideshow-img {
+  position: absolute;
+  opacity: 0;
+}
+
+form {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type='file'] {
+  position: relative;
+  opacity: 0;
+  z-index: 100;
+  cursor: pointer;
+  width: 50%;
+}
+
+.file-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+  width: max-content;
+}
+
+.file-display {
+  display: flex;
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  width: fit-content;
+}
+
+button  {
+  border-radius: 5px;
+  background-color: #337ab7;
+  color: #fff;
+  border-color: #2e6da4;
+  cursor: pointer;
+  margin: 0px 5px;
+  width: fit-content;
+}
+
+.content {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}

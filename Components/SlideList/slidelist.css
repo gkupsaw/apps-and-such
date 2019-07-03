@@ -1,0 +1,36 @@
+/* Slidelist Styling */
+
+.list-button {
+    background-color: darkgray;
+    border-color: gray;
+    color: white;
+    box-shadow: 1px 1px 15px grey;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    width: fit-content;
+    cursor: pointer;
+    padding: 3px 10px;
+}
+
+.slide-container  {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    align-items: center;
+    padding: 0px 5px;
+    position: absolute;
+}
+
+.list-contents {
+    display: flex;
+    flex-flow: column;
+    height: 260px;
+    border-radius: 2%;
+    z-index: 1;
+    width: 100%;
+    align-self: center;
+    overflow-x: hidden;
+    transition: 0.5s;
+    background-color: rgba(51, 122, 183, 0.5);
+}

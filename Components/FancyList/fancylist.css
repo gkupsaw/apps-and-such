@@ -1,0 +1,53 @@
+/* Fancy List Styling */
+
+.list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+  margin-top: 10px;
+}
+
+.list > * {
+  padding: 0px 5px;
+}
+
+.list-content-hidden, .list-content-visible {
+  flex-flow: column;
+  z-index: 1;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  padding: 5;
+  height: 100%;
+  transition: 0.5s;
+}
+
+.list-content-hidden {
+  opacity: 0;
+}
+
+.list-content-visible {
+  opacity: 1;
+}
+
+.list-header {
+  cursor: pointer;
+  width: fit-content;
+  height: fit-content;
+  cursor: pointer;
+  background-color: #808080;
+  opacity: 0.6;
+  border-radius: 5px;
+}
+
+.list-item {
+  font-size: 16px;
+  opacity: 0.6;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.list-item:hover {
+  cursor: pointer;
+  background-color: #808080;
+}
